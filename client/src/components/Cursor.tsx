@@ -5,7 +5,7 @@ interface CursorProps {
     userName: string;
     userColor: string;
     cursorPosition: number;
-    editorRef: React.RefObject<HTMLTextAreaElement>; // Changed to textarea
+    editorRef: React.RefObject<HTMLTextAreaElement | null>; // Changed to textarea
     content: string; // Need full content to calculate position
 }
 
